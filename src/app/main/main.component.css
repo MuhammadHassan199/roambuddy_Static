@@ -1,0 +1,28 @@
+.bgimage{
+    color: aliceblue;
+    background-image: url(../../assets/roambuddy_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 740px;
+    margin-bottom: 5rem;
+}
+.bgimageheading{
+    font-size: 44px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 62px;
+    width: 60%;
+    padding: 5rem 3rem;
+}
+.video-btn{
+    border-radius: 50%;
+    background-color: #01db5d;
+    border-color: #01db5d;
+    height: 50px;
+    width: 50px;
+    background-image: url(../../assets/play-icon-white-png-7.jpg);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
