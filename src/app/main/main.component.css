@@ -2,9 +2,11 @@
     color: aliceblue;
     background-image: url(../../assets/roambuddy_hero.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 740px;
     margin-bottom: 5rem;
+    margin-top: 4rem;
 }
 .bgimageheading{
     font-size: 44px;
@@ -13,7 +15,7 @@
     text-align: left;
     line-height: 62px;
     width: 60%;
-    padding: 5rem 3rem;
+    padding: 3rem;
 }
 .video-btn{
     border-radius: 50%;
@@ -25,4 +27,71 @@
     background-position: center;
     background-size: 20px;
     background-repeat: no-repeat;
+}
+.video-btn:hover{
+    border: #01db5d 0.5px;
+    background-color: transparent;
+}
+.heroPara{
+    font-size: 28px;
+    max-width: 500px;
+    padding: 3rem ;
+}
+.bgimage .buttons{
+    background-color: #01db5d;
+    text-align: center;
+    border-radius: 26px;
+    color: white !important;
+    line-height: 18.9px;
+    border-color: none;
+    width: 238.3px;
+    height: 54px;
+    font-size: 18px;
+    margin: 3rem;
+}
+.searchBox{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 12px;
+    border-radius: 7px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border: none;
+}
+.plansheading{
+    font-weight: 800;
+    line-height: 0.5;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.unlock_eSim{
+    color: #01db5d;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.selectionBar{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+ul{
+    background: white;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+.countryplans{
+    background-color: #e5e5e5;
+    padding: 2rem;
+    border-radius: 25px;
+}
+.mostPopular{
+    background-color: black;
+    border-radius: 25px;
+    width: 160px;
+    font-weight: 700;
 }
