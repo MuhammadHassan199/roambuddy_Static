@@ -29,6 +29,7 @@
     padding: 14px 0;
     border-radius: 25px;
     font-size: 14px;
+    color: #dadada;
 }
 .cart_icon{
     cursor: pointer;
@@ -37,6 +38,17 @@
 .cart_icon :hover{
     color: #639fff;
 }
+.login{
+    background-color: #01db5d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    padding: 14px 0;
+}
+
 
 
 

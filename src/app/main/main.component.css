@@ -89,9 +89,13 @@ ul{
     padding: 2rem;
     border-radius: 25px;
 }
-.mostPopular{
-    background-color: black;
+.categories_Tab{
     border-radius: 25px;
     width: 160px;
     font-weight: 700;
+}
+.categories_Tab:hover{
+    background-color:#01db5d;
+    color: #f0f0f0;
+    border-radius: 25px;
 }
