@@ -88,6 +88,7 @@ ul{
     background-color: #e5e5e5;
     padding: 2rem;
     border-radius: 25px;
+    margin-bottom: 4rem;
 }
 .categories_Tab{
     border-radius: 25px;
@@ -99,3 +100,51 @@ ul{
     color: #f0f0f0;
     border-radius: 25px;
 }
+.feedback_heading{
+    font-weight: 800;
+    line-height: 0.5;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.testinomial_container{
+    display: flex;
+    align-items: center;
+    background-color: #01db5d;
+    margin: 0 auto;
+    border-radius: 30px;
+    color: #f0f0f0;
+    padding: 2rem; 
+}
+.pic{
+    width:80%;
+    
+}
+.pic1{
+    width: 210px;
+}
+.description{
+    padding: 70px;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+}
+.description::before{
+    content: "\f10d";
+    font-family: fontawesome;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 50px;
+    color: #fff;
+}
+/* .description::after{
+    content: "\f10e";
+    font-family: fontawesome;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+} */
+
