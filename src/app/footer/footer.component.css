@@ -14,5 +14,15 @@ border-radius: 5px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    padding: 40px 0;
+    background-position: top;
+    height: 600px;
+}
+.verticalLine{
+    border-left: 2px solid #01db5d;
+    height: 300px;
+}
+.socialIcons{
+    margin-top: 20%;
+    margin-left: 40px;
 }
