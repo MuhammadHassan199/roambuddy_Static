@@ -1,6 +1,7 @@
 .partner{
 background-image: url(../../assets/travel.png);
 margin: 6rem;
+background-repeat: no-repeat;
 padding: 40px 0;
 width: auto;
 height: 280px;
@@ -16,7 +17,7 @@ border-radius: 5px;
     background-repeat: no-repeat;
     padding: 40px 0;
     background-position: top;
-    height: 600px;
+    height: 500px;
 }
 .verticalLine{
     border-left: 2px solid #01db5d;

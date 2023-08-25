@@ -46,7 +46,7 @@
         <div class="selectionBar col-md-12 col-sm-12 col-xs-12 text-center">
             <ul class="nav-bar justify-content-end nav">
                 <li>
-                    <app-button buttonText="Country eSIM" class="categories_Tab"></app-button>
+                    <app-button buttonText="Country eSIM" class="categories_Tab" style="background-color: #01db5d;"></app-button>
                 </li>
                 <li>
                     <app-button buttonText="Regional eSIM" class="categories_Tab"></app-button>
@@ -56,7 +56,26 @@
                 </li>
               </ul>
         </div>
-            
+        <!-- this is flag portion -->
+          <div class="col-md-12 mt-3">
+            <div class="content">
+                <div class="w-100" style="position: relative;">
+                <div class="grid-container">
+                    <div *ngFor="let country of countries" class="country">
+                    <div class="countryItem">
+                    <div class="d-flex w-100 align-items-center justify-content-start">
+                        <span class="flag-icon fi fi-{{country.code.toLowerCase()}} fis"></span>
+                        <p class="C_name" >{{country.name}}</p>
+                    </div>
+                        <span>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="testimonial">
             <div class="row">

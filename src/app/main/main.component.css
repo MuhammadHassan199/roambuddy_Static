@@ -139,12 +139,40 @@ ul{
     font-size: 50px;
     color: #fff;
 }
-/* .description::after{
-    content: "\f10e";
-    font-family: fontawesome;
-    font-size: 20px;
-    color: #fff;
-    position: absolute;
-    bottom: 5px;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 30px;
+    gap: 30px;
+}
+.countryItem{
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.25s;
+    min-height: 55px;
+}
+.C_name{
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.3333;
+    color: #4a4a4a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 8px;
+}
+/* .country_Esim{
+    display: flex;
+    justify-content: flex-start;
+    
 } */
-
