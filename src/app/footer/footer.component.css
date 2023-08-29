@@ -1,14 +1,23 @@
 .partner{
 background-image: url(../../assets/travel.png);
-margin: 6rem;
+margin: 5rem;
 background-repeat: no-repeat;
-padding: 40px 0;
+padding: 2rem;
 width: auto;
-height: 280px;
 border-radius: 5px;
 }
 .partnerBtn{
     width: 25%;
+}
+.partnerHeading{
+    line-height: 2.2;
+    color: #073785;
+    font-size: 2rem;
+}
+.partnerPara{
+    line-height: 2.2;
+    color: #073785;
+    font-size: 1.5rem;
 }
 .footer{
     background-image: url(../../assets/footer-bg.jpg);
@@ -19,6 +28,13 @@ border-radius: 5px;
     background-position: top;
     height: 600px;
 }
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.warranty{
+    width: 65%;
+}
 .verticalLine{
     border-left: 2px solid #01db5d;
     height: 300px;
@@ -26,4 +42,129 @@ border-radius: 5px;
 .socialIcons{
     margin-top: 20%;
     margin-left: 40px;
+}
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    .partner{
+        width: 570px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .partnerBtn{
+        width: 50vh;
+    }
+    .partnerHeading{
+        line-height: 1.8;
+        color: #073785;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+    .footer{
+        width: 100vh;
+        height: auto;
+        text-align: center;
+    }
+    .warrantyCont{
+        display: flex;
+        justify-content: center;
+    }
+    .warranty{
+        width: 80vh;  
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        margin: 30% 0;
+        width: 100%;
+    }
+    .verticalLine{
+        border: none;
+        width: 100vh;
+        height: 180px;
+    }
+    .content{
+        justify-content: center;
+    }
+    .center{
+        font-size: x-large;
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 570px){
+    .partner{
+        width: 570px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .partnerBtn{
+        width: 50vh;
+    }
+    .partnerHeading{
+        line-height: 1.8;
+        color: #073785;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+    .footer{
+        width: 100vh;
+        height: auto;
+        text-align: center;
+    }
+    .warrantyCont{
+        display: flex;
+        justify-content: center;
+    }
+    .warranty{
+        width: 80vh;  
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        margin: 30% 0;
+        width: 100%;
+    }
+    .verticalLine{
+        border: none;
+        width: 100vh;
+        height: 180px;
+    }
+    .content{
+        justify-content: center;
+    }
+    .center{
+        font-size: x-large;
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 571px) and (max-width: 769px){
+    .footer{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .warrantyCont{
+        display: flex;
+        justify-content: center;
+    }
+    .warranty{
+        width: 50vh;  
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        margin: 30% 0;
+        width: 100%;
+    }
+    .verticalLine{
+        border: none;
+        width: 100vh;
+        height: 180px;
+    }
+    .content{
+        justify-content: center;
+    }
+    .center{
+        font-size: x-large;
+        margin-top: 0;
+    }
 }
