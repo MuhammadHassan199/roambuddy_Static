@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-   
+  activeTabIndex: number = 0;
+  showTab(index: number) {
+    this.activeTabIndex = index;
+  }
 }

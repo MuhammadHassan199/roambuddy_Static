@@ -25,6 +25,7 @@
     border-radius: 5px;
     flex: 56%;
     text-align: center;
+    margin-left: 10px;
 }
 .planAvailBtn:hover{
     background-color: #2a8891;
@@ -41,4 +42,24 @@
 .Get_btn:hover{
     background-color: #2a8891;
     color: #fff;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .card{
+        width: 100%;
+    }
+    h6{
+    font-size: 26px; 
+    }
+    .planAvailBtn{
+        color: #2a8891;
+        border: 1px solid #2a8891;
+        padding: 5px;
+        border-radius: 5px;
+        flex: 56%;
+        text-align: center; 
+    }
+    .planAvailBtn{
+        font-size: 20px;
+        margin-left: 10px;
+    }
 }

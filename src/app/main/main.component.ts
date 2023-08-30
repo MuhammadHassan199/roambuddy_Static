@@ -1,6 +1,7 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AppPlanCardComponent } from '../app-plan-card/app-plan-card.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { AppPlanCardComponent } from '../app-plan-card/app-plan-card.component';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
+
 export class MainComponent {
   countries: any[] = [
     { code: 'AE', name: 'United Arab Emirates' },
@@ -45,8 +47,8 @@ export class MainComponent {
   ];
   displayedCountries: any[] = [];
   showAll: boolean = false;
-
-constructor() {
+drop_Down: any;
+constructor(private router:Router) {
   this.displayedCountries = this.countries.slice(0, 12);
 }
 countriesItem() {
@@ -57,9 +59,27 @@ countriesItem() {
   } else {
       this.displayedCountries = this.countries.slice(0, 12); // Show only first 12 countries
   }
+} 
+@Input() country: any;
+countryCardOpenStates: number = -1;
+
+    toggleCountryCard(index: number) {
+      if (this.countryCardOpenStates === index) {
+        // Clicked on an already open card, so close it
+        this.countryCardOpenStates = -1;
+    } else {
+        // Close previously open card (if any) and open the new one
+        this.countryCardOpenStates = index;
+    
+    }
+  }
+  currentlyDisplayedContentId: string = 'countryFlags';
+  changeDisplayedContent(contentId: string) {
+    this.currentlyDisplayedContentId = contentId;
+    
 }
-openPlans() {
-  this.countriesItem 
-  
+activeTabIndex: number = 0;
+showTab(index: number) {
+  this.activeTabIndex = index;
 }
 }
