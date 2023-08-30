@@ -41,15 +41,15 @@
             </div>
         </div>
     </div>
-    <div class="container country_search">
+    <div   id="planSearch" class="container country_search mt-5">
     <div class="row countryplans mt-5">
         <div class="selectionBar col-md-12 col-sm-12 col-xs-12 text-center">
             <ul class="nav-bar justify-content-end nav">
                 <li>
-                    <a class="nav-link active" href="#">Country eSIM</a>
+                    <a class="nav-link active" href="#countryFlags">Country eSIM</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#">Regional eSIM</a>
+                    <a class="nav-link" href="#regional_eSIM">Regional eSIM</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#">Global eSIM</a>
@@ -57,11 +57,11 @@
               </ul>
         </div>
         <!-- this is flag portion -->
-          <div class="col-md-12 mt-3">
+          <div class="col-md-12 mt-3"  id="countryFlags">
             <div class="content">
                 <div class="w-100" style="position: relative;">
-                <div class="grid-container">
-                    <div *ngFor="let country of countries" class="country">
+                <div class="grid-container" id="countryFlags">
+                    <div *ngFor="let country of displayedCountries; let i = index" class="country" [style.display]="country.isHidden ? 'none' : 'block'">
                     <div class="countryItem">
                     <div class="d-flex w-100 align-items-center justify-content-start">
                         <span class="flag-icon fi fi-{{country.code.toLowerCase()}} fis"></span>
@@ -71,24 +71,32 @@
                             <i class="fas fa-chevron-down"></i>
                         </span>
                     </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <app-app-plan-card></app-app-plan-card>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>
             <div class="col-md-12 col-md-12 text-center col-xs-12 mt-2"> 
-                <button type="button" class="btn showAll mt-5">Show All Countries
-                <i class="fa fa-arrow-down"></i>
-            </button>
+                <button type="button" class="btn showAll mt-5" (click)="countriesItem()">
+                    {{ showAll ? 'Show Popular Countries' : 'Show All Countries' }}
+                    <i class="fa" [class.fa-arrow-down]="!showAll" [class.fa-arrow-up]="showAll"></i>
+                </button>
+
             </div>
+           
           </div>
         </div>
-        <div class="testimonial">
-            <div class="row">
+        <div class="testimonial" id="testinomial">
+            <div class="row"  >
                 <div class="col-md-12 col-sm-12 text-center">
                     <h3 class="feedback_heading">What Our Customer Says About us</h3>
                     <br>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" >
                     <div class="testinomial_container">
                         <div class="pic">
                             <img src="../../assets/ewa.png" alt="" class="pic1">

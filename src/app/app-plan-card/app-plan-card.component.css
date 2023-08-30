@@ -1,0 +1,44 @@
+.planCard{
+    padding: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60vh;
+}
+.card-header{
+    background: transparent;
+    padding: 10px;
+}
+.country-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.planAvailBtn{
+    color: #2a8891;
+    border: 1px solid #2a8891;
+    padding: 5px;
+    border-radius: 5px;
+    flex: 56%;
+    text-align: center;
+}
+.planAvailBtn:hover{
+    background-color: #2a8891;
+    color: #fff;
+}
+.Get_btn{
+    background-color: transparent;
+    color: #2a8891;
+    border: 1px solid #2a8891;
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 auto
+}
+.Get_btn:hover{
+    background-color: #2a8891;
+    color: #fff;
+}

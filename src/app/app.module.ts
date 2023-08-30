@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LogoComponent } from './navbar/logo/logo.component';
 import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
+import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainComponent } from './main/main.component';
     FooterComponent,
     LogoComponent,
     ButtonComponent,
-    MainComponent
+    MainComponent,
+    AppPlanCardComponent
   ],
   imports: [
     BrowserModule,

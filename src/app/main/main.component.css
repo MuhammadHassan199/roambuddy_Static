@@ -8,11 +8,9 @@
     margin-bottom: 5rem;
     margin-top: 4rem;
 }
-
 .marginTopForNav {
     margin-top: 78px;
 }
-
 .bgimageheading{
     font-size: 44px;
     font-weight: bold;
@@ -34,8 +32,10 @@
     background-repeat: no-repeat;
 }
 .video-btn:hover{
-    border: #01db5d 0.5px;
+    border-color: #01db5d 0.5px;
     background-color: transparent;
+    transition: 0.5s all;
+    color: #01db5d;
 }
 .heroPara{
     font-size: 28px;
@@ -53,6 +53,13 @@
     height: 54px;
     font-size: 18px;
     margin: 3rem;
+}
+.bgimage .buttons:hover{
+    background-color: #fff;
+    border: 1px solid #01db5d !important;
+    color: #01db5d !important;
+    font-weight: 400;
+    transition: 0.5s all;
 }
 
 .searchBox{
@@ -96,6 +103,7 @@ a.nav-link.active{
 }
 a.nav-link{
     color: #4a4a4a;
+    border-radius: 50px;
 }
 a.nav-link:hover{
     background-color: #000000;
@@ -184,10 +192,12 @@ a.nav-link:hover{
     background-color: #707070;
     color: #ffffff;
     width: 30%;
+    
 }
 .showAll:hover{
     color: #4a4a4a;
     background-color: #fff;
+    
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px){
