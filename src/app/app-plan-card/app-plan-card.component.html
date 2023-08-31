@@ -3,7 +3,7 @@
         <div class="country-name">
             <h6 class="m-0">{{country.name}} 5GB</h6>
             <div class="planAvailBtn" style="cursor: pointer;">
-                <span>work in 1 country</span>
+                <span data-bs-toggle="modal" data-bs-target="#workingBtn">work in 1 country</span>
             </div>
         </div>
     </div>
@@ -46,3 +46,20 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="workingBtn" tabindex="-1" aria-labelledby="workingBtn" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="container-fluid">
+          <h1 class="modal-title fs-5" id="workingBtn">Coverage</h1>
+          <p style="margin-bottom: 0;">1 Country</p>
+        </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+        </div>
+      </div>
+    </div>
+  </div> 
