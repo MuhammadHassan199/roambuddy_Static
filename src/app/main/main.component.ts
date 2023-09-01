@@ -47,7 +47,7 @@ export class MainComponent {
   ];
   displayedCountries: any[] = [];
   showAll: boolean = false;
-drop_Down: any;
+// drop_Down: any;
 constructor(private router:Router) {
   this.displayedCountries = this.countries.slice(0, 12);
 }
@@ -78,6 +78,7 @@ countryCardOpenStates: number = -1;
     this.currentlyDisplayedContentId = contentId;
     
 }
+
 activeTabIndex: number = 0;
 showTab(index: number) {
   this.activeTabIndex = index;

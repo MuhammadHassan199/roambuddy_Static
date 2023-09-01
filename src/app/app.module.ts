@@ -10,6 +10,7 @@ import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
 import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
     LogoComponent,
     ButtonComponent,
     MainComponent,
-    AppPlanCardComponent
+    AppPlanCardComponent,
   ],
   imports: [
     BrowserModule,
