@@ -74,7 +74,8 @@
         <li (click)="changeDisplayedContent('countryFlags')">
           <a
             class="nav-link"
-            [routerLink]="'countryFlags'"
+           
+            routerLinkActive="'countryFlags'"
             href="#countryFlags"
             (click)="showTab(0)"
             [ngClass]="{ active: activeTabIndex === 0 }"
@@ -84,7 +85,8 @@
         <li (click)="changeDisplayedContent('regional_eSIM')">
           <a
             class="nav-link"
-            [routerLink]="'regional_eSIM'"
+            routerLinkActive="'regional_eSIM'"
+            
             href="#regional_eSIM"
             (click)="showTab(1)"
             [ngClass]="{ active: activeTabIndex === 1 }"
@@ -94,7 +96,8 @@
         <li (click)="changeDisplayedContent('global_eSIM')">
           <a
             class="nav-link"
-            [routerLink]="'regional_eSIM'"
+            routerLinkActive="'global_eSIM'"
+           
             href="#global_eSIM"
             (click)="showTab(2)"
             [ngClass]="{ active: activeTabIndex === 2 }"
@@ -107,68 +110,29 @@
     <!-- this is flag portion -->
     <div class="col-md-12 mt-3">
       <div class="w-100" style="position: relative">
-        <div
-          class="grid-container"
-          *ngIf="currentlyDisplayedContentId === 'countryFlags'"
-          [hidden]="activeTabIndex !== 0"
-        >
-          <div
-            *ngFor="let country of displayedCountries; let i = index"
-            class="country"
-            [style.display]="country.isHidden ? 'none' : 'block'"
-          >
-            <div
-              class="countryItem"
-              style="cursor: pointer"
-              data-bs-toggle="modal"
-              data-bs-target="#cardModal"
-            >
-              <div
-                class="d-flex w-100 align-items-center justify-content-start"
-              >
-                <span
-                  class="flag-icon fi fi-{{ country.code.toLowerCase() }} fis"
-                ></span>
-                <p class="C_name">{{ country.name }}</p>
+        <div class="grid-container" id="#countryFlags" *ngIf="currentlyDisplayedContentId === 'countryFlags'" [hidden]="activeTabIndex !== 0">
+          <div *ngFor="let country of displayedCountries; let i = index" class="country" [style.display]="country.isHidden ? 'none' : 'block'" (click)="toggleCountryCard(i)" style="cursor: pointer;">
+            <div class="countryItem">
+              <div class="d-flex w-100 align-items-center justify-content-start">
+                <span class="flag-icon fi fi-{{country.code.toLowerCase()}} fis"></span>
+                <p class="C_name">{{country.name}}</p>
               </div>
               <span class="drop_Down">
                 <i class="fas fa-chevron-down"></i>
               </span>
             </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="cardModal"
-              tabindex="-1"
-              aria-labelledby="cardModal"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="cardModal">
-                      Country Plan
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <app-app-plan-card country ="country"></app-app-plan-card>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="item" *ngIf="countryCardOpenStates === i">
-                            <div class="row">
-                                <app-app-plan-card [country]="country"></app-app-plan-card>
-                            </div>
-                        </div> -->
           </div>
         </div>
+        
+        <!-- Container for country cards displayed at the end -->
+        <div class="country-cards">
+          <div *ngFor="let country of displayedCountries; let i = index" class="country-card" [style.display]="countryCardOpenStates === i ? 'block' : 'none'">
+            <div class="row">
+              <app-app-plan-card [country]="country"></app-app-plan-card>
+            </div>
+          </div>
+        </div>
+        
         <div class="col-md-12 col-md-12 text-center col-xs-12">
           <button
             type="button"

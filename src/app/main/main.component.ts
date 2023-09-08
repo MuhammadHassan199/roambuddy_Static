@@ -83,4 +83,6 @@ activeTabIndex: number = 0;
 showTab(index: number) {
   this.activeTabIndex = index;
 }
+
 }
+

@@ -208,6 +208,7 @@ a.nav-link.active{
 .accordion-button :active{
     background-color: transparent;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 375px){
     .bgimage{
         height: 950px;
