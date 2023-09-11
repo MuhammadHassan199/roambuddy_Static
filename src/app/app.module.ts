@@ -9,6 +9,7 @@ import { LogoComponent } from './navbar/logo/logo.component';
 import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
 import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
