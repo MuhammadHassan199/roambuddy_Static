@@ -9,7 +9,9 @@ import { LogoComponent } from './navbar/logo/logo.component';
 import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
 import { AppPlanCardComponent } from './app-plan-card/app-plan-card.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { ApiService } from './services/api.service';
 
 
 @NgModule({
@@ -26,7 +28,6 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

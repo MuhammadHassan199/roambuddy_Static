@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from '../services/api.service';
 
 
 
@@ -10,5 +12,7 @@ import { Component, Input } from '@angular/core';
 export class AppPlanCardComponent {
   @Input() country: any;
   
+  
+  constructor(private _route: Router, private _apiService: ApiService){}
 
 }
