@@ -2,7 +2,6 @@ import { NgFor } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { AppPlanCardComponent } from '../app-plan-card/app-plan-card.component';
 import { Router } from '@angular/router';
-import {PlanCardsService} from '../services/plan-cards.service'
 
 
 @Component({
@@ -50,13 +49,9 @@ export class MainComponent {
   showAll: boolean = false;
 // drop_Down: any;
 planCards:any;
-constructor(private planCard:PlanCardsService) {
+constructor(private _route: Router) {
   this.displayedCountries = this.countries.slice(0, 12);
-  planCard.planCards().subscribe((data)=>{
-    console.warn("data",data);
-    this.planCards=data
-  });
-}
+  };
 countriesItem() {
   this.showAll = !this.showAll;
 
