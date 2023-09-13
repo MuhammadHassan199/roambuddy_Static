@@ -11,8 +11,14 @@ import { ApiService } from '../services/api.service';
 })
 export class AppPlanCardComponent {
   @Input() country: any;
-  
+  storeAllPlans: [] = [];
   
   constructor(private _route: Router, private _apiService: ApiService){}
+  getAllPlans() {
+    this._apiService.getAllProducts().subscribe((res: any) => {
+      this.storeAllPlans = [];
+      this.storeAllPlans = res.data;
+    });
+  }
 
 }
